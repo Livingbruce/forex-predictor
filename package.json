@@ -1,0 +1,34 @@
+{
+  "name": "forex-prediction",
+  "version": "1.0.0",
+  "description": "A comprehensive forex prediction system with AI-powered analysis, real-time data, and trading signals",
+  "main": "backend/intelligent-backend.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build:frontend": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview"
+  },
+  "keywords": [
+    "forex",
+    "prediction",
+    "trading",
+    "ai",
+    "machine-learning",
+    "technical-analysis",
+    "real-time-data"
+  ],
+  "author": "Forex Prediction System",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
